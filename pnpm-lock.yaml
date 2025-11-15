@@ -11,6 +11,10 @@ importers:
       netlify-shortener:
         specifier: ^2.4.0
         version: 2.4.0
+    devDependencies:
+      netlify-redirect-parser:
+        specifier: ^14.4.0
+        version: 14.4.0
 
 packages:
 
@@ -25,6 +29,9 @@ packages:
   '@babel/runtime@7.28.4':
     resolution: {integrity: sha512-Q/N6JNWvIvPnLDvjlE1OUBLPQHH6l3CltCEsHIujp45zQUSSh8K+gHnaEX45yAT1nyngnINhvWtzN+Nb9D8RAQ==}
     engines: {node: '>=6.9.0'}
+
+  '@iarna/toml@2.2.5':
+    resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -49,6 +56,13 @@ packages:
   execa@1.0.0:
     resolution: {integrity: sha512-adbxcyWV46qiHyvSp50TKt05tB4tK3HcmF7/nxfAdhnox83seTDbwnaqKO4sXRy7roHAIFqJP/Rw/AuEbX61LA==}
     engines: {node: '>=6'}
+
+  fast-safe-stringify@2.1.1:
+    resolution: {integrity: sha512-W+KJc2dmILlPplD/H4K9l9LcAHAfPtP6BY84uVLXQ6Evcz9Lcg33Y2z1IVblT6xdY54PXYVHEv+0Wpq8Io6zkA==}
+
+  filter-obj@5.1.0:
+    resolution: {integrity: sha512-qWeTREPoT7I0bifpPUXtxkZJ1XJzxWtfoWWkdVGqa+eCr3SHW/Ocp89o8vLvbUuQnadybJpjOKu4V+RwO6sGng==}
+    engines: {node: '>=14.16'}
 
   find-up@4.1.0:
     resolution: {integrity: sha512-PpOwAdQ/YlXQ2vj8a3h8IipDuYRi3wceVQQGYWxNINccq40Anw7BlsEXCMbt1Zt+OLA6Fq9suIpIWD0OsnISlw==}
@@ -80,6 +94,10 @@ packages:
     engines: {node: '>=8'}
     hasBin: true
 
+  is-plain-obj@4.1.0:
+    resolution: {integrity: sha512-+Pgi+vMuUNkJyExiMBt5IlFoMyKnr5zhJ4Uspz58WOhBF5QoIZkFyNHIbBAtHwzVAgk5RtndVNsDRN61/mmDqg==}
+    engines: {node: '>=12'}
+
   is-stream@1.1.0:
     resolution: {integrity: sha512-uQPm8kcs47jx38atAcWTVxyltQYoPT68y9aWYdV6yWXSyW8mzSat0TL6CiWdZeCdF3KrAvpVtnHbTv4RN+rqdQ==}
     engines: {node: '>=0.10.0'}
@@ -103,6 +121,10 @@ packages:
   locate-path@5.0.0:
     resolution: {integrity: sha512-t7hw9pI+WvuwNJXwk5zVHpyhIqzg2qTlklJOf0mVxGSbe3Fp2VieZcduNYjaLDoy6p9uGpQEGWG87WpMKlNq8g==}
     engines: {node: '>=8'}
+
+  netlify-redirect-parser@14.4.0:
+    resolution: {integrity: sha512-fFS8fJwYfALCjyVdPxYC7v+/Eb4XjwQK8kJn6ZXYHxMY7VK+dQUZ1+CppiUaJjlrfnixiZPfi8bzPW6rE7MnFQ==}
+    engines: {node: ^14.16.0 || >=16.0.0}
 
   netlify-shortener@2.4.0:
     resolution: {integrity: sha512-Bnp3y6h1Q3SiYkOUeHsnP74P3cp8CxKtr+zez2WbuVcIcZpBPACcNUXZYZuNWJAQm4+/SVFNekndmbRYGWJnaw==}
@@ -145,6 +167,10 @@ packages:
   path-exists@4.0.0:
     resolution: {integrity: sha512-ak9Qy5Q7jYb2Wwcey5Fpvg2KoAc/ZIhLSLOSBmRmygPsGwkVVt0fZa0qrtMz+m6tJTAHfZQ8FnmB4MG4LWy7/w==}
     engines: {node: '>=8'}
+
+  path-exists@5.0.0:
+    resolution: {integrity: sha512-RjhtfwJOxzcFmNOi6ltcbcu4Iu+FL3zEj83dk4kAS+fVpTxXLO1b38RvJgT/0QwvV/L3aY9TAnyv0EOqW4GoMQ==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
   path-key@2.0.1:
     resolution: {integrity: sha512-fEHGKCSmUSDPv4uoj8AlD+joPlq3peND+HRYyxFz4KPw4z926S/b8rIuFs2FYJg3BwsxJf6A9/3eIdLaYC+9Dw==}
@@ -237,6 +263,8 @@ snapshots:
 
   '@babel/runtime@7.28.4': {}
 
+  '@iarna/toml@2.2.5': {}
+
   '@types/normalize-package-data@2.4.4': {}
 
   arch@2.2.0: {}
@@ -273,6 +301,10 @@ snapshots:
       signal-exit: 3.0.7
       strip-eof: 1.0.0
 
+  fast-safe-stringify@2.1.1: {}
+
+  filter-obj@5.1.0: {}
+
   find-up@4.1.0:
     dependencies:
       locate-path: 5.0.0
@@ -298,6 +330,8 @@ snapshots:
 
   is-docker@2.2.1: {}
 
+  is-plain-obj@4.1.0: {}
+
   is-stream@1.1.0: {}
 
   is-wsl@2.2.0:
@@ -315,6 +349,14 @@ snapshots:
   locate-path@5.0.0:
     dependencies:
       p-locate: 4.1.0
+
+  netlify-redirect-parser@14.4.0:
+    dependencies:
+      '@iarna/toml': 2.2.5
+      fast-safe-stringify: 2.1.1
+      filter-obj: 5.1.0
+      is-plain-obj: 4.1.0
+      path-exists: 5.0.0
 
   netlify-shortener@2.4.0:
     dependencies:
@@ -359,6 +401,8 @@ snapshots:
       lines-and-columns: 1.2.4
 
   path-exists@4.0.0: {}
+
+  path-exists@5.0.0: {}
 
   path-key@2.0.1: {}
 

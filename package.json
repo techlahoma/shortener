@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check": "netlify check"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +13,8 @@
   "packageManager": "pnpm@10.12.4",
   "dependencies": {
     "netlify-shortener": "^2.4.0"
+  },
+  "devDependencies": {
+    "netlify-redirect-parser": "^14.4.0"
   }
 }
