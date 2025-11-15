@@ -1,0 +1,56 @@
+# These are URLs that Techlahoma owns which means 
+# we can change them later if we need the link to 
+# Meetup, Luma, Google Meet Link, a Live Stream 
+# or something totally different. We can also change
+# the link to a different page on our website if we need to. 
+
+# These can also be used for QR codes created at 
+# https://it-tools.tech/qrcode-generator so that 
+# QR codes shared on flyers or elsewhere can be 
+# updated after printing. 
+
+
+# Apex Redirect https://link.techlahoma.org/
+/              https://techlahoma.org
+
+
+# Set Redirects
+
+# Techlahoma Shortener
+/shortener      https://github.com/techlahoma/shortener
+# Techlahoma LinkedIn
+/linkedin       https://www.linkedin.com/company/techlahoma-foundation
+# Techlahoma Expert AMA either event page or Google Meet link
+/ama            https://luma.com/1ky3drci
+
+
+
+# Default Redirect for everything else
+# Should be last redirect in the file
+# so that it doesn't take over other redirects.
+/*              https://techlahoma.org
+
+
+
+# Examples
+
+# Redirect with a permanent redirect - 301
+# /home         /              301
+
+# Splat
+# /news/*  /blog/:splat
+
+# Placeholders
+# /news/:year/:month/:date/:slug  /blog/:year/:month/:date/:slug
+
+# Query Params
+# /articles id=:id tag=:tag /posts/:tag/:id 301
+
+# Domain
+# other URLS might proxy or redirect offsite
+# https://frontend.yoursite.com/login/* https://backend.yoursite.com/:splat 200
+
+
+
+# Docs
+# https://docs.netlify.com/routing/redirects/redirect-options/
