@@ -1,0 +1,11 @@
+# General
+.DS_Store
+*.log
+
+# Node
+node_modules/
+pnpm-lock.yaml
+
+# Netlify
+.netlify/
+
