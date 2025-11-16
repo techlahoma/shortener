@@ -74,6 +74,7 @@ https://docs.netlify.com/routing/redirects/
 - `/okc-osh` → https://www.meetup.com/okc-osh/ (302)
 - `/okc-pythonistas` → https://www.meetup.com/pythonistas/ (302)
 - `/okc-webdevs` → https://www.meetup.com/okcwebdevs/ (302)
+- `/qr` → https://it-tools.tech/qrcode-generator (302)
 - `/shecodesokc` → https://www.meetup.com/shecodesokc/ (302)
 - `/shortener` → https://github.com/techlahoma/shortener
 - `/tda` → https://www.meetup.com/tulsadevelopers-net/ (302)
