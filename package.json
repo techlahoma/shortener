@@ -15,6 +15,7 @@
     "netlify-shortener": "^2.4.0"
   },
   "devDependencies": {
+    "@types/node": "^24.10.1",
     "netlify-redirect-parser": "^14.4.0"
   }
 }
