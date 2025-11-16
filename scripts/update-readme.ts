@@ -47,6 +47,7 @@ async function loadRedirects() {
     await parseAllRedirects({
       redirectsFiles: [redirectsFile],
       netlifyConfigPath,
+      configRedirects: [],
       minimal: true,
     });
   if (errors.length > 0) {
