@@ -2,6 +2,9 @@ name: Sync README redirects
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - "_redirects"
   schedule:
     - cron: "0 6 * * *"
 
