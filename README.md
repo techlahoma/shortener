@@ -57,3 +57,39 @@ When you commit a new line, the next deploy updates
 Learn more in Netlify's redirect docs:
 https://docs.netlify.com/routing/redirects/
 
+## List of Redirects
+
+<!-- redirects:start -->
+- `/` → https://github.com/techlahoma/shortener
+- `/*` → https://techlahoma.org
+- `/ama` → https://luma.com/1ky3drci
+- `/linkedin` → https://www.linkedin.com/company/techlahoma-foundation
+- `/ok-ai` → https://oklahom.ai/
+- `/okc-ai` → https://www.meetup.com/oklahom_ai/ (302)
+- `/okc-game` → https://www.meetup.com/oklahoma-game-developers/ (302)
+- `/okc-gamedev` → https://www.meetup.com/oklahoma-game-developers/ (302)
+- `/okc-jug` → https://www.meetup.com/oklahoma-city-java-user-group/ (302)
+- `/okc-jug-site` → https://okcjug.org/ (302)
+- `/okc-lugnuts` → https://www.meetup.com/okc-lugnuts/ (302)
+- `/okc-osh` → https://www.meetup.com/okc-osh/ (302)
+- `/okc-pythonistas` → https://www.meetup.com/pythonistas/ (302)
+- `/okc-webdevs` → https://www.meetup.com/okcwebdevs/ (302)
+- `/shecodesokc` → https://www.meetup.com/shecodesokc/ (302)
+- `/shortener` → https://github.com/techlahoma/shortener
+- `/tda` → https://www.meetup.com/tulsadevelopers-net/ (302)
+- `/tgd` → https://www.meetup.com/tulsa-game-developers/ (302)
+- `/tulsa-agile` → https://www.meetup.com/tulsaagilepractitioners/ (302)
+- `/tulsa-ai` → https://www.meetup.com/oklahomai-developers/ (302)
+- `/tulsa-aws` → https://www.meetup.com/tulsa-aws/ (302)
+- `/tulsa-dev` → https://www.meetup.com/tulsadevelopers-net/ (302)
+- `/tulsa-dotnet` → https://www.meetup.com/tulsadevelopers-net/ (302)
+- `/tulsa-game` → https://www.meetup.com/tulsa-game-developers/ (302)
+- `/tulsa-gamedev` → https://www.meetup.com/tulsa-game-developers/ (302)
+- `/tulsa-salesforce` → https://trailblazercommunitygroups.com/salesforce-user-group-tulsa-united-states/ (302)
+- `/tulsa-ux` → https://tulsaux.com/ (302)
+- `/tulsa-ux-ig` → https://www.instagram.com/tulsaux/ (302)
+- `/tulsa-web` → https://www.meetup.com/tulsa-web-devs/ (302)
+- `/tulsa-wp` → https://www.meetup.com/tulsa-wordpress-meetup/ (302)
+- `/twd` → https://www.meetup.com/tulsa-web-devs/ (302)
+- `/twd-site` → https://tulsawebdevs.org/ (302)
+<!-- redirects:end -->
