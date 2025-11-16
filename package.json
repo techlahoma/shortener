@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "update:readme": "bun scripts/update-readme.ts",
-    "build": "pnpm update:readme"
+    "postinstall": "pnpm update:readme"
   },
   "keywords": [],
   "author": "",
