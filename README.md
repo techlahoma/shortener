@@ -63,6 +63,7 @@ https://docs.netlify.com/routing/redirects/
 - `/` → https://github.com/techlahoma/shortener
 - `/*` → https://techlahoma.org
 - `/ama` → https://luma.com/1ky3drci
+- `/ama-call` → https://meet.google.com/cdu-mjqx-cyd
 - `/linkedin` → https://www.linkedin.com/company/techlahoma-foundation
 - `/ok-ai` → https://oklahom.ai/
 - `/okc-ai` → https://www.meetup.com/oklahom_ai/ (302)
