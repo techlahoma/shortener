@@ -1,0 +1,46 @@
+name: Sync README redirects
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * *"
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: pnpm
+      - name: Enable pnpm
+        run: corepack enable pnpm
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+      - name: Install deps
+        run: pnpm install
+      - name: Update README
+        run: bun scripts/update-readme.ts
+      - name: Commit changes
+        run: |
+          if git status --porcelain | grep -q .
+          then
+            git config user.name \
+              "github-actions[bot]"
+            EMAIL="41898282+github-actions[bot]"
+            EMAIL="$EMAIL@users.noreply.github.com"
+            git config user.email "$EMAIL"
+            git commit -am \
+              "chore: sync redirects"
+            git push
+          else
+            echo "No README updates to commit."
+          fi
+
