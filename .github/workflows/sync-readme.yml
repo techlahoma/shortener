@@ -1,49 +1,41 @@
 name: Sync README redirects
 
 on:
+  schedule:
+    - cron: "0 0 * * *"
   workflow_dispatch:
   push:
     paths:
       - "_redirects"
-  schedule:
-    - cron: "0 6 * * *"
+      - ".github/workflows/sync-readme.yml"
 
 jobs:
   sync:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
         with:
-          persist-credentials: true
-      - name: Setup Node
+          version: latest
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "lts/*"
           cache: pnpm
-      - name: Enable pnpm
-        run: corepack enable pnpm
       - name: Setup Bun
         uses: oven-sh/setup-bun@v1
         with:
           bun-version: latest
-      - name: Install deps
-        run: pnpm install
-      - name: Update README
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Run update script
         run: bun scripts/update-readme.ts
-      - name: Commit changes
-        run: |
-          if git status --porcelain | grep -q .
-          then
-            git config user.name \
-              "github-actions[bot]"
-            EMAIL="41898282+github-actions[bot]"
-            EMAIL="$EMAIL@users.noreply.github.com"
-            git config user.email "$EMAIL"
-            git commit -am \
-              "chore: sync redirects"
-            git push
-          else
-            echo "No README updates to commit."
-          fi
+      - name: Commit README
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: sync redirects"
+          file_pattern: "README.md"
 
