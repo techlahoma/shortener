@@ -30,6 +30,17 @@
 /ama            https://luma.com/1ky3drci
 /ama-call       https://meet.google.com/cdu-mjqx-cyd
 
+# GDG Tulsa workshop mini-zine QR codes (printed; repoint here, never reprint)
+# /gdg-workshop is the back-cover "all the links" page; interim target is the
+# starter repo until a public attendee resource page exists.
+/gdg-workshop        https://github.com/techlahoma/techlahoma-google-apps-starter  302
+/gdg-files           https://github.com/techlahoma/techlahoma-google-apps-starter  302
+/gdg-models          https://gdg-model-workshop.web.app/  302
+/gdg-vocab           https://www.aicodingdictionary.com/  302
+/gdg-skill-guide     https://skills.samcarlton.com/sams-skill-creator/introduction/  302
+/gdg-skill-examples  https://skills.samcarlton.com/sams-skill-creator/examples/  302
+/gdg-slack           https://www.techlahoma.org/techlahoma-slack/  302
+
 # Meetup Groups
 /okc-lugnuts    https://www.meetup.com/okc-lugnuts/    302
 /okc-osh        https://www.meetup.com/okc-osh/        302
